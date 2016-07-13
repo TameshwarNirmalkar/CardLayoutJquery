@@ -1,0 +1,93 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+a:focus { outline: none;}
+ul.list-border-height{
+    border:1px solid #fff;
+    border-bottom:0px solid #fff;
+}
+ul.list-border-height li{
+    height:300px;
+    border-left:1px solid #fff; 
+    border-bottom:1px solid #fff; 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+ul.list-border-height li .overlay{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+ul.list-border-height li .overlay .imagepanel{
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+ul.list-border-height li .overlay .imagepanel:before, .contentani{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    z-index: 1;
+}
+ul.list-border-height li .overlay .contentpanel{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    z-index: 2;
+    transition: background 0.5s linear; /* vendorless fallback */
+    -o-transition: background 0.5s linear; /* opera */
+    -ms-transition: background 0.5s linear; /* IE 10 */
+    -moz-transition: background 0.5s linear; /* Firefox */
+    -webkit-transition: background 0.5s linear; /*safari and chrome */
+}
+ul.list-border-height li .overlay .contentpanel:hover  {
+    background: rgba(0,0,0,0.8);
+}
+.actionpanel a{
+    color: #fff; text-decoration: none;
+}
+ul.list-border-height li .overlay h3{color: #ffffb5;}
+ul.list-border-height li .overlay .actionpanel{
+    bottom:-40px; 
+    position:absolute; 
+    right:20px;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    font-size:30px;
+    z-index: 1;
+}
+ul.list-border-height li .overlay:hover .actionpanel{
+    visibility: visible;
+    bottom: 10px;
+}
+
+.contentani{
+    transition: all 0.5s ease;
+    padding: 0px 20px;
+}
+ul.list-border-height li .overlay:hover .contentani{
+    top: 100px;
+}

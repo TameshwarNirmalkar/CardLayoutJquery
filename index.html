@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Infobfip Jquery Implementation</title>
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/fontawesome/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/mainstyle.css" type="text/css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div id="listview"></div>
+		</div>
+	</div>
+
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/jquery.toaster.js"></script>
+	<script src="assets/vendor/underscore-min.js"></script>
+	<script src="assets/js/Infobip_Action.js"></script>
+	<script src="assets/js/Infobip.Class.js"></script>
+	<script src="assets/js/Infobip.Script.js"></script>
+
+	<script type="text/template" id="listTemplate">
+		<ul class="list-unstyled list-border-height">
+		<% _.each(model, function(data,i){ %>
+			<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="li_<%=i+1%>" style="background-image:url(<%= data.product_img %>)">
+				<div class="overlay">
+					<div class="contentpanel">
+						<div class="contentani">
+							<h3><i class="fa <%= cssChange(data.msgtype) %>"></i> <%= data.product_name %></h3>
+							<span><%= data.shortdesc %></span>
+						</div>
+						<span class="pull-right actionpanel">
+							<a href="javascript:void(0);" class="fa fa-folder-open" data-actionname="open" data-id="<%= data.product_name %>"></a>
+							<a href="javascript:void(0);" class="fa fa-print" data-actionname="print" data-id="<%= data.product_name %>"></a>
+							<a href="javascript:void(0);" class="fa fa-close" data-actionname="delete" data-id="li_<%= i+1 %>"></a>
+						</span>
+					</div>
+				</div>
+			</li>
+		<% }) %>
+		</ul>
+	</script>
+
+</body>
+</html>

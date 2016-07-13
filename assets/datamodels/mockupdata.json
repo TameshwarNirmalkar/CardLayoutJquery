@@ -1,0 +1,14 @@
+{ "data" : [
+    {"product_name": "Account Message", "msgtype":1, "product_img":"assets/images/1.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Promotion Message", "msgtype":2, "product_img":"assets/images/2.jpg", "shortdesc": "The header should be preceded by an icon and the entire blog should have an image background"},
+    {"product_name": "Bulk Message", "msgtype":3, "product_img":"assets/images/3.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Security Message", "msgtype":4, "product_img":"assets/images/4.jpg", "shortdesc": "The header should be preceded by an icon and the entire blog should have an image background"},
+    {"product_name": "Promotion Message", "msgtype":2, "product_img":"assets/images/2.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Bulk Message", "msgtype":3, "product_img":"assets/images/3.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Security Message", "msgtype":4, "product_img":"assets/images/4.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Account Message", "msgtype":1, "product_img":"assets/images/1.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Bulk Message", "msgtype":3, "product_img":"assets/images/3.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Security Message", "msgtype":4, "product_img":"assets/images/4.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Account Message", "msgtype":1, "product_img":"assets/images/1.jpg", "shortdesc": "The header and text paragraph"},
+    {"product_name": "Promotion Message", "msgtype":2, "product_img":"assets/images/2.jpg", "shortdesc": "The header and text paragraph"}
+]}

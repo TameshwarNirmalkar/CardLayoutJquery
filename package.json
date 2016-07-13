@@ -1,0 +1,25 @@
+{
+  "name": "infobip",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "files": ["build", "dist"],
+  "author": "Tameshwar Nirmalkar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "live-server": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TameshwarNirmalkar"
+  },
+  "bugs": {
+    "url": "https://github.com/TameshwarNirmalkar"
+  },
+  "homepage": "https://github.com/TameshwarNirmalkar"
+}

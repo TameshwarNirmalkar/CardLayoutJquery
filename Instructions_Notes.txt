@@ -1,0 +1,4 @@
+- please install node first in your system.
+- then open the node terminal from start menu and go to the folder where you extract the codebase using command.
+- then run "npm install" to install the dependencies.
+- To start the app run "npm start"

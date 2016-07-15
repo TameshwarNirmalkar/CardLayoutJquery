@@ -17,7 +17,7 @@
     // regularly referenced in your plugin).
 
     // Create the defaults once
-    var pluginName = 'handleEvent',
+    var pluginName = 'handleNewEvent',
         defaults = {
             propertyName: "value"
         };
@@ -44,6 +44,10 @@
         // You already have access to the DOM element and
         // the options via the instance, e.g. this.element 
         // and this.options
+        console.log(this.options.propertyName);
+        $(this.element).on('click', function(){
+            console.log('event fired');
+        })
     };
 
     // A really lightweight plugin wrapper around the constructor, 

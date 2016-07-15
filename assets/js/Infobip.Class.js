@@ -24,6 +24,9 @@ var InfobipModule = (function($){
 					$.toaster({ message : getid, title : 'Delete Action', priority : 'danger' });
 				}
 			});
+			$('#listview').handleNewEvent({
+				propertyName: 'Tameshwar'
+			});
 		});
 	};
 	/**

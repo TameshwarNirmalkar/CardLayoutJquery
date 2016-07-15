@@ -31,7 +31,7 @@
         // result in the first object. The first object 
         // is generally empty because we don't want to alter 
         // the default options for future instances of the plugin
-        this.options = $.extend( {}, defaults, options) ;
+        this.options = $.extend( true, {}, defaults, options );
         
         this._defaults = defaults;
         this._name = pluginName;
@@ -44,9 +44,9 @@
         // You already have access to the DOM element and
         // the options via the instance, e.g. this.element 
         // and this.options
-        console.log(this.options.propertyName);
-        $(this.element).on('click', function(){
-            console.log('event fired');
+        var _self = this;
+        $(this.element).find('[data-actionname]').on('click', function(){
+            console.log(this);
         })
     };
 
